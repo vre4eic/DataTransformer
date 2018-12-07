@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>gr.forth.ics.isl</groupId>
+    <artifactId>CerifDataTransformer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>gr.forth.ics.isl</groupId>
+            <artifactId>x3ml-engine</artifactId>
+            <version>1.8.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>FORTH-ISL-releases</id>
+            <name>FORTH ISL Nexus repository - Releases</name>
+            <url>http://www.ics.forth.gr/isl/maven-releases</url>
+        </repository>
+        <repository>
+            <id>FORTH-ISL-snapshots</id>
+            <name>FORTH ISL Nexus repository - Snapshots</name>
+            <url>http://www.ics.forth.gr/isl/maven-snapshots</url>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+</project>
